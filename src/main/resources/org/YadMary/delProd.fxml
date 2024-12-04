@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="119.0" layoutY="56.0" style="-fx-font-family: Outfit; -fx-text-fill: blueviolet;" text="Seleccione el identificador del producto a Eliminar:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="269.0" layoutY="172.0" />
+      <Button layoutX="313.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: none; -fx-border-color: blueviolet; -fx-font-family: outfit;" text="Eliminar" />
+   </children>
+</AnchorPane>

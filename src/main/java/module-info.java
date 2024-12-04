@@ -12,7 +12,7 @@ module org.YadMary {
 
     opens org.YadMary to javafx.fxml;
     opens org.YadMary.controller to javafx.fxml;
-    opens org.YadMary.entity to org.hibernate.orm.core;
+    opens org.YadMary.entity to org.hibernate.orm.core, javafx.base;
     exports org.YadMary;
 
 }

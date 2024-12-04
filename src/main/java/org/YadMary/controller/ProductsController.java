@@ -56,8 +56,16 @@ public class ProductsController {
         App.setRoot("provs");
     }
     @FXML
-    public void initializeTable() {
+    private void switchToAdd() throws IOException {
+        App.setRoot("addProducts");
+    }
 
+    @FXML
+    public void initializeTable() {
+            addProduct();
+        for (Producto producto : productos) {
+            System.out.println(producto);
+        }
         desc.setCellValueFactory(new PropertyValueFactory<Producto, String>("desc"));
         color.setCellValueFactory(new PropertyValueFactory<Producto, String>("color"));
         precio.setCellValueFactory(new PropertyValueFactory<Producto, String>("precio"));
@@ -70,7 +78,15 @@ public class ProductsController {
     public void addProduct() {
         productos=getProductos();
         for (Producto producto:productos) {
-            productsList.add(producto);
+           Producto newProd = new Producto();
+           String desc = newProd.getDescription();
+           String color = newProd.getColor();
+           int precio = newProd.getPrecio();
+           String prov = newProd.getProveedor();
+           int stock = newProd.getStock();
+
+
+            productsList.add(newProd);
         }
     }
 

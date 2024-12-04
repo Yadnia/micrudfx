@@ -52,7 +52,7 @@ public class AcquisitionsController {
         for (int i = 0; i<100; i++){
             quantityChoice.getItems().add(i);
         }
-        
+
     }
 
     private ObservableList<Producto> getProductos (){
