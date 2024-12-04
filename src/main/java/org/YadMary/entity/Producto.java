@@ -32,7 +32,7 @@ public class Producto {
     private int precio;
 
     @Column (name = "Proveedor")
-    private Proveedor proveedor;
+    private String proveedor;
 
     // Default constructor
     public Producto() {
@@ -113,15 +113,15 @@ public class Producto {
         this.precio = precio;
     }
 
-    public Proveedor getProveedor() {
+    public String getProveedor() {
         return proveedor;
     }
 
-    public void setProveedor(Proveedor proveedor) {
+    public void setProveedor(String proveedor) {
         this.proveedor = proveedor;
     }
 
-    public Producto(String description, String color, String code, String cate, String size, int stock, int precio, Proveedor proveedor) {
+    public Producto(String description, String color, String code, String cate, String size, int stock, int precio, String proveedor) {
         this.description = description;
         this.color = color;
         this.code = code;

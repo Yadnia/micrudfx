@@ -16,6 +16,13 @@
         <property name="hbm2ddl.auto">create</property>
 
         <mapping class="org.YadMary.entity.User" />
+        <mapping class="org.YadMary.entity.Cliente"/>
+        <mapping class="org.YadMary.entity.Factura"/>
+        <mapping class="org.YadMary.entity.Producto"/>
+        <mapping class="org.YadMary.entity.Vendedor"/>
+        <mapping class="org.YadMary.entity.Proveedor"/>
+        <mapping class="org.YadMary.entity.Ventas"/>
+
 
     </session-factory>
 </hibernate-configuration>

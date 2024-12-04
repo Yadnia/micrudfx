@@ -8,6 +8,7 @@ module org.YadMary {
     requires java.naming;
     requires java.sql;
     requires java.desktop;
+    requires com.google.errorprone.annotations;
 
     opens org.YadMary to javafx.fxml;
     opens org.YadMary.controller to javafx.fxml;

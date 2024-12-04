@@ -19,6 +19,11 @@ public class Vendedor extends User{
     public Vendedor(String password, String username) {
         super(password, username);
     }
+
+    public Vendedor() {
+
+    }
+
     public String getRol() {
         return rol;
     }

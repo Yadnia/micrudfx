@@ -21,7 +21,7 @@ public class AdministrationController {
     }
     @FXML
     private void switchToInventory() throws IOException {
-        App.setRoot("Inventory");
+        App.setRoot("products");
     }
     @FXML
     private void switchToProvs() throws IOException {
