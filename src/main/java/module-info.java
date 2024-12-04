@@ -5,10 +5,13 @@ module org.YadMary {
     requires org.apache.logging.log4j.core;
     requires org.apache.logging.log4j;
     requires java.persistence;
-    requires org.checkerframework.checker.qual;
     requires java.naming;
-    requires com.sun.jna.platform;
+    requires java.sql;
+    requires java.desktop;
 
     opens org.YadMary to javafx.fxml;
+    opens org.YadMary.controller to javafx.fxml;
+    opens org.YadMary.entity to org.hibernate.orm.core;
     exports org.YadMary;
+
 }

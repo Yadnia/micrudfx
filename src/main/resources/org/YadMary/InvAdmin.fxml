@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="58.0" prefWidth="808.0" style="-fx-background-color: white;">
+         <children>
+            <ButtonBar layoutX="88.0" layoutY="2.0" prefHeight="55.0" prefWidth="706.0">
+               <buttons>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="459.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Administradores" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Vendedores" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Inventario" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Proveedores" />
+                  <MenuButton mnemonicParsing="false" style="-fx-background-color: White; -fx-text-fill: white; -fx-border-color: Blueviolet; -fx-font-family: Outfit;" text="Reportes" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </MenuButton>
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Clientes" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Volver" />
+               </buttons>
+            </ButtonBar>
+         </children>
+      </Pane>
+      <Label layoutX="705.0" layoutY="191.0" style="-fx-font-family: Outfit; -fx-text-fill: white;" text="Usuario:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="685.0" layoutY="235.0" style="-fx-font-family: Outfit; -fx-text-fill: white;" text="Admin username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="675.0" layoutY="521.0" mnemonicParsing="false" style="-fx-background-color: DarkViolet; -fx-text-fill: white; -fx-font-family: Outfit;" text="Cerrar sesión" />
+      <Pane layoutX="-4.0" layoutY="54.0" prefHeight="77.0" prefWidth="814.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutX="3.0" layoutY="-7.0" prefHeight="71.0" prefWidth="808.0">
+               <children>
+                  <Label layoutX="384.0" layoutY="24.0" prefHeight="41.0" prefWidth="112.0" style="-fx-font-family: Outfit;" text="Inventario">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="-2.0" layoutY="78.0" prefHeight="469.0" prefWidth="490.0">
+               <content>
+                  <TableView prefHeight="478.0" prefWidth="498.0">
+                     <columns>
+                        <TableColumn prefWidth="79.99999457597733" text="Descripción" />
+                        <TableColumn prefWidth="48.79998779296875" text="Color" />
+                        <TableColumn prefWidth="65.5999755859375" text="Código" />
+                        <TableColumn prefWidth="60.80000305175781" text="Categoría" />
+                        <TableColumn prefWidth="55.20001220703125" text="Talla" />
+                        <TableColumn prefWidth="69.5999755859375" text="Stock" />
+                        <TableColumn prefWidth="104.800048828125" text="Precio" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane layoutX="484.0" layoutY="131.0" prefHeight="469.0" prefWidth="180.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="14.0" layoutY="63.0" mnemonicParsing="false" style="-fx-background-color: Mediumslateblue; -fx-text-fill: white; -fx-font-family: Outfit;" text="Editar" />
+            <Button layoutX="14.0" layoutY="103.0" mnemonicParsing="false" style="-fx-background-color: Red; -fx-text-fill: white; -fx-font-family: Outfit;" text="Eliminar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

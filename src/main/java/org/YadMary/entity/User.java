@@ -3,18 +3,28 @@ package org.YadMary.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "usuarios")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @Column(name = "username", length = 40, unique = true)
     private String username;
 
-
     @Column(name = "password")
     private String password;
+
+    @Column (name = "Nombre")
+    private String nombre;
+
+    @Column (name = "Apellido")
+    private String apellido;
+
+    @Column (name = "Cedula")
+    private String cedula;
+
 
     public User(String password, String username) {
         this.password = password;
@@ -24,11 +34,6 @@ public class User {
     public User() {
     }
 
-    public User(Long id, String username, String password) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-    }
 
     public Long getId() {
         return id;

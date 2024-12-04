@@ -1,6 +1,5 @@
 package org.YadMary.entity;
 
-import org.checkerframework.checker.units.qual.C;
 import org.hibernate.annotations.Entity;
 
 import javax.persistence.*;
