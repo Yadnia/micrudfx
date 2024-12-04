@@ -28,4 +28,8 @@ public class SellersController {
     private void switchToProvs() throws IOException {
         App.setRoot("provs");
     }
+    @FXML
+    private void switchToAddSeller() throws IOException {
+        App.setRoot("addSeller");
+    }
 }
