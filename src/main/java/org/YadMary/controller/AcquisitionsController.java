@@ -1,19 +1,17 @@
 package org.YadMary.controller;
 
-import com.google.errorprone.annotations.FormatMethod;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import org.YadMary.App;
-import org.YadMary.entity.Cliente;
 import org.YadMary.entity.Compras;
 import org.YadMary.entity.Producto;
 import org.YadMary.entity.Proveedor;
 import org.YadMary.service.GenericServiceImpl;
 import org.YadMary.service.IGenericService;
 import org.YadMary.utils.HibernateUtil;
-import org.checkerframework.checker.units.qual.C;
+import org.YadMary.Reportes;
 
 import java.io.IOException;
 
@@ -81,6 +79,10 @@ public class AcquisitionsController {
     public void createCompra(Compras compra){
         IGenericService<Compras> clientService = new GenericServiceImpl<>(Compras.class, HibernateUtil.getSessionFactory());
         clientService.save(compra);
+    }
+    @FXML
+    public void openReport() throws Exception {
+        Reportes.generarReporte("src/main/resources/reportes/VentasMelis.jrxml");
     }
 
 }

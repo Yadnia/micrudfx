@@ -34,10 +34,10 @@
                   <ChoiceBox fx:id="dateChoice" prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <ChoiceBox fx:id="quantityChoice" prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label text="Monto" GridPane.rowIndex="4" />
-                  <TextField GridPane.columnIndex="1"  style="-fx-background-color: none; -fx-border-color: BlueViolet;" GridPane.rowIndex="4" />
+                  <TextField style="-fx-background-color: none; -fx-border-color: BlueViolet;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
-            <Button layoutX="48.0" layoutY="258.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="208.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-font-family: Outfit;" text="Ver en reporte" />
+            <Button fx:id="REPORTES" onAction="#openReport" layoutX="48.0" layoutY="258.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="208.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-font-family: Outfit;" text="Ver en reporte" />
          </children>
       </Pane>
       <ScrollPane layoutX="290.0" layoutY="36.0" prefHeight="370.0" prefWidth="313.0">

@@ -10,6 +10,7 @@ module org.YadMary {
     requires java.desktop;
     requires com.google.errorprone.annotations;
     requires org.checkerframework.checker.qual;
+    requires jasperreports;
 
     opens org.YadMary to javafx.fxml;
     opens org.YadMary.controller to javafx.fxml;
