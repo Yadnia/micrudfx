@@ -5,11 +5,9 @@ import org.YadMary.App;
 
 import java.io.IOException;
 
-public class EdAdminController {
+public class SellersController {
     @FXML
     private void switchToAdministration() throws IOException {
         App.setRoot("Main");
     }
-
-
 }

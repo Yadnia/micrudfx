@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="org.YadMary.controller.EdAdminController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.YadMary.controller.EdAdminController">
    <children>
       <Pane layoutX="-5.0" layoutY="-5.0" prefHeight="104.0" prefWidth="808.0" style="-fx-background-color: white;">
          <children>
-            <Button onAction="#switchToAdministration" layoutX="24.0" layoutY="40.0" mnemonicParsing="false" style="-fx-background-color: none; -fx-border-color: blueviolet;" text="Atrás" />
+            <Button layoutX="24.0" layoutY="40.0" mnemonicParsing="false" onAction="#switchToAdministration" style="-fx-background-color: none; -fx-border-color: blueviolet;" text="Atrás" />
          </children></Pane>
       <Pane layoutX="243.0" layoutY="72.0" prefHeight="530.0" prefWidth="561.0" style="-fx-background-color: white;">
          <children>
@@ -49,13 +49,14 @@
                   <Button fx:id="nuevoUser" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="Nuevo" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                   <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Cancelar" GridPane.rowIndex="5" />
                   <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="87.0" text="Listo" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                  <ChoiceBox fx:id="nombreChoice" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                  <ChoiceBox fx:id="apellidChoice" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <ChoiceBox fx:id="cedChoice" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                  <ChoiceBox fx:id="userChoice" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
                </children>
             </GridPane>
-            <Label layoutX="138.0" layoutY="26.0" style="-fx-font-family: Outfit; -fx-text-fill: Blueviolet;" text="Edición de Administrador">
+            <Label layoutX="170.0" layoutY="35.0" style="-fx-font-family: Outfit; -fx-text-fill: Blueviolet;" text="Edición de Vendedor">
                <font>
                   <Font size="24.0" />
                </font>

@@ -28,10 +28,10 @@
                   <Label prefHeight="18.0" prefWidth="50.0" text="Cantidad" GridPane.rowIndex="3" />
                   <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: blueviolet; -fx-text-fill: white; -fx-font-family: Outfit;" text="Registrar" GridPane.rowIndex="4" />
                   <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: Lightgreen; -fx-text-fill: black; -fx-font-family: Outfit;" text="Nuevo..." GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <ChoiceBox prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: BlueViolet;" GridPane.columnIndex="1" />
-                  <ChoiceBox prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: Blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <ChoiceBox prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <ChoiceBox prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ChoiceBox fx:id="prodChoice" prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: BlueViolet;" GridPane.columnIndex="1" />
+                  <ChoiceBox fx:id="provChoice" prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: Blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ChoiceBox fx:id="dateChoice" prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="quantityChoice" prefWidth="150.0" style="-fx-background-color: none; -fx-border-color: blueviolet;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
             </GridPane>
             <Button layoutX="48.0" layoutY="258.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="208.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-font-family: Outfit;" text="Ver en reporte" />
