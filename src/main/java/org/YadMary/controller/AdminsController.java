@@ -29,4 +29,9 @@ public class AdminsController {
     private void switchToProvs() throws IOException {
         App.setRoot("provs");
     }
+    @FXML
+    private void switchToAddAdmin() throws IOException {
+        App.setRoot("addAdmin");
+    }
+
 }
