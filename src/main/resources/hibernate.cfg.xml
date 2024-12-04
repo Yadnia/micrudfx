@@ -22,6 +22,7 @@
         <mapping class="org.YadMary.entity.Vendedor"/>
         <mapping class="org.YadMary.entity.Proveedor"/>
         <mapping class="org.YadMary.entity.Ventas"/>
+        <mapping class="org.YadMary.entity.Compras"/>
 
 
     </session-factory>

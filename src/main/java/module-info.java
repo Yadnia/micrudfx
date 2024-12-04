@@ -9,6 +9,7 @@ module org.YadMary {
     requires java.sql;
     requires java.desktop;
     requires com.google.errorprone.annotations;
+    requires org.checkerframework.checker.qual;
 
     opens org.YadMary to javafx.fxml;
     opens org.YadMary.controller to javafx.fxml;

@@ -28,4 +28,9 @@ public class provsController {
     private void switchToProvs() throws IOException {
         App.setRoot("provs");
     }
+
+    @FXML
+    private void switchToAddProv() throws IOException {
+        App.setRoot("adProv");
+    }
 }

@@ -7,11 +7,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import org.YadMary.App;
 import org.YadMary.entity.Cliente;
+import org.YadMary.entity.Compras;
 import org.YadMary.entity.Producto;
 import org.YadMary.entity.Proveedor;
 import org.YadMary.service.GenericServiceImpl;
 import org.YadMary.service.IGenericService;
 import org.YadMary.utils.HibernateUtil;
+import org.checkerframework.checker.units.qual.C;
 
 import java.io.IOException;
 
@@ -52,7 +54,20 @@ public class AcquisitionsController {
         for (int i = 0; i<100; i++){
             quantityChoice.getItems().add(i);
         }
+        for (int i = 0; i<28; i++){
+            String fecha = i +" de Octubre";
+            dateChoice.getItems().add(fecha);
+        }
 
+    }
+    @FXML
+    private void addAcquisition() {
+        Compras compras = new Compras();
+        compras.setProducto(prodChoice.getValue());
+        compras.setProveedor(provChoice.getValue());
+        compras.setFecha(dateChoice.getValue());
+        compras.setMonto(quantityChoice.getValue());
+            createCompra(compras);
     }
 
     private ObservableList<Producto> getProductos (){
@@ -62,6 +77,10 @@ public class AcquisitionsController {
     private ObservableList<Proveedor> getProveedores (){
         IGenericService<Proveedor> provService = new GenericServiceImpl<>(Proveedor.class, HibernateUtil.getSessionFactory());
         return FXCollections.observableArrayList(provService.findAll());
+    }
+    public void createCompra(Compras compra){
+        IGenericService<Compras> clientService = new GenericServiceImpl<>(Compras.class, HibernateUtil.getSessionFactory());
+        clientService.save(compra);
     }
 
 }

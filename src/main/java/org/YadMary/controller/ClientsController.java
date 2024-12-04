@@ -32,4 +32,9 @@ public class ClientsController {
         App.setRoot("clients");
     }
 
+    @FXML
+    private void switchToAddClient() throws IOException {
+        App.setRoot("addClient");
+    }
+
 }

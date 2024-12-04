@@ -11,38 +11,26 @@ public class Ventas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @ManyToOne
-    @JoinColumn(name = "cliente_id")
-    private Cliente cliente;
+    @Column (name = "cliente")
+    private String cliente;
 
-    @ElementCollection
-    @Column(name = "producto_id")
-    private List<Long> productoIds;
+
+    @Column(name = "productod")
+    private String producto;
 
     @Column(name = "monto")
-    private float monto;
+    private int monto;
 
-    @ManyToOne
-    @JoinColumn(name = "vendedor_id")
-    private Vendedor vendedor;
+    @Column(name = "vendedor")
+    private String vendedor;
 
     @Column(name = "fecha")
-    private LocalDate fecha;
+    private String fecha;
 
     // Default constructor
     public Ventas() {
     }
 
-    // Parameterized constructor
-    public Ventas(Cliente cliente, List<Long> productoIds, float monto, Vendedor vendedor, LocalDate fecha) {
-        this.cliente = cliente;
-        this.productoIds = productoIds;
-        this.monto = monto;
-        this.vendedor = vendedor;
-        this.fecha = fecha;
-    }
-
-    // Getters and setters
     public long getId() {
         return id;
     }
@@ -51,54 +39,52 @@ public class Ventas {
         this.id = id;
     }
 
-    public Cliente getCliente() {
+    public String getCliente() {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
 
-    public List<Long> getProductos() {
-        return productoIds;
+    public String getProducto() {
+        return producto;
     }
 
-    public void setProductos(List<Long> productos) {
-        this.productoIds = productos;
+    public void setProducto(String producto) {
+        this.producto = producto;
     }
 
-    public float getMonto() {
+    public int getMonto() {
         return monto;
     }
 
-    public void setMonto(float monto) {
+    public void setMonto(int monto) {
         this.monto = monto;
     }
 
-    public Vendedor getVendedor() {
+    public String getVendedor() {
         return vendedor;
     }
 
-    public void setVendedor(Vendedor vendedor) {
+    public void setVendedor(String vendedor) {
         this.vendedor = vendedor;
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    @Override
-    public String toString() {
-        return "Ventas{" +
-                "id=" + id +
-                ", cliente=" + cliente +
-                ", productos=" + productoIds +
-                ", monto=" + monto +
-                ", vendedor=" + vendedor +
-                ", fecha=" + fecha +
-                '}';
-    }}
+    public Ventas(String cliente, String productoIds, int monto, String vendedor, String fecha) {
+        this.cliente = cliente;
+        this.producto = productoIds;
+        this.monto = monto;
+        this.vendedor = vendedor;
+        this.fecha = fecha;
+    }
+// Parameterized constructor
+}
