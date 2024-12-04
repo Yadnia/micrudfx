@@ -1,12 +1,12 @@
 package org.YadMary.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import org.YadMary.App;
 
 import java.io.IOException;
 
-public class AdministrationController {
-
+public class ClientsController {
     @FXML
     private void switchToHome() throws IOException {
         App.setRoot("Main");

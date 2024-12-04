@@ -67,12 +67,12 @@ public class GenericServiceImpl<T> implements IGenericService<T> {
 
     @Override
     public void update(T object) {
-
+        dao.update(object);
     }
 
     @Override
     public void delete(T object) {
-
+        dao.delete(object);
     }
 
     @Override

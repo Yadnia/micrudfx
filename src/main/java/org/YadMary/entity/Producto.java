@@ -31,6 +31,9 @@ public class Producto {
     @Column(name = "precio")
     private int precio;
 
+    @Column (name = "Proveedor")
+    private Proveedor proveedor;
+
     // Default constructor
     public Producto() {
     }
@@ -110,6 +113,25 @@ public class Producto {
         this.precio = precio;
     }
 
+    public Proveedor getProveedor() {
+        return proveedor;
+    }
+
+    public void setProveedor(Proveedor proveedor) {
+        this.proveedor = proveedor;
+    }
+
+    public Producto(String description, String color, String code, String cate, String size, int stock, int precio, Proveedor proveedor) {
+        this.description = description;
+        this.color = color;
+        this.code = code;
+        this.cate = cate;
+        this.size = size;
+        this.stock = stock;
+        this.precio = precio;
+        this.proveedor = proveedor;
+    }
+
     @Override
     public String toString() {
         return "Producto{" +
@@ -121,6 +143,7 @@ public class Producto {
                 ", size='" + size + '\'' +
                 ", stock=" + stock +
                 ", precio=" + precio +
+                ", proveedor=" + proveedor +
                 '}';
     }
 }

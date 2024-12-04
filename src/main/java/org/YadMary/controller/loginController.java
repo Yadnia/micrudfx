@@ -61,7 +61,7 @@ public class loginController {
     private void ini(){
         if(usuarios.isEmpty()){
             User usuario = new User();
-            usuario.setUsername("yad");
+            usuario.setUsername("yadnia");
             usuario.setPassword("1234");
             IGenericService<User> usuarioService = new GenericServiceImpl<>(User.class, HibernateUtil.getSessionFactory());
             usuarioService.save(usuario);

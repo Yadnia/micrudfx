@@ -21,14 +21,14 @@
                   <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="459.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Administradores" onAction="#switchToAdmins" />
                   <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Vendedores" onAction="#switchToSellers" />
                   <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Inventario" onAction="#switchToInventory"/>
-                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Proveedores" onAction="#switchToAcquisitions" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Proveedores" onAction="#switchToProvs" />
                   <MenuButton mnemonicParsing="false" style="-fx-background-color: White; -fx-text-fill: white; -fx-border-color: Blueviolet; -fx-font-family: Outfit;" text="Reportes" textFill="WHITE">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Ventas" />
                         <MenuItem mnemonicParsing="false" text="Action 2" />
                      </items>
                   </MenuButton>
-                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Clientes" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Clientes" onAction="#switchToClients" />
                   <Button fx:id="backbtton" onAction="#switchToHome" mnemonicParsing="false" prefHeight="26.0" prefWidth="459.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Volver" />
                </buttons>
             </ButtonBar>
