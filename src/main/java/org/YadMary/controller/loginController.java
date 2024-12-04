@@ -25,26 +25,27 @@ public class loginController {
 
     @FXML
     private void validateLogin() throws IOException {
-//        usuarios=getUsuarios();
+        usuarios=getUsuarios();
+        ini();
         String username = this.usertxt.getText();
         String password = this.passwdtxt.getText();
 
-        if (username.equals("yad") && password.equals("1234")) {
-            switchToMain();
-        }
-
-//        boolean flag = false;
-//        for (User usuario : usuarios) {
-//            if (usuario.getUsername().equals(username) && usuario.getPassword().equals(password)) {
-//                flag = true;
-//                break;
-//            }
-//        }
-//        if (flag)  {
+//        if (username.equals("yad") && password.equals("1234")) {
 //            switchToMain();
-//        } else {
-//            System.out.println("Invalid username or password");
 //        }
+
+        boolean flag = false;
+        for (User usuario : usuarios) {
+            if (usuario.getUsername().equals(username) && usuario.getPassword().equals(password)) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag)  {
+            switchToMain();
+        } else {
+            System.out.println("Invalid username or password");
+        }
     }
 
     private void switchToMain() throws IOException {
@@ -52,20 +53,20 @@ public class loginController {
     }
 
 
-//    private ObservableList<User> getUsuarios (){
-//        IGenericService<User> usuarioService = new GenericServiceImpl<>(User.class, HibernateUtil.getSessionFactory());
-//        return FXCollections.observableArrayList(usuarioService.findAll());
-//    }
+    private ObservableList<User> getUsuarios (){
+        IGenericService<User> usuarioService = new GenericServiceImpl<>(User.class, HibernateUtil.getSessionFactory());
+        return FXCollections.observableArrayList(usuarioService.findAll());
+    }
 
-//    private void ini(){
-//        if(usuarios.isEmpty()){
-//            User usuario = new User();
-//            usuario.setUsername("yad");
-//            usuario.setPassword("1234");
-//            IGenericService<User> usuarioService = new GenericServiceImpl<>(User.class, HibernateUtil.getSessionFactory());
-//            usuarioService.save(usuario);
-//            loggedUser = usuario;
-//            usuarios.add(loggedUser);
-//        };
-//    }
+    private void ini(){
+        if(usuarios.isEmpty()){
+            User usuario = new User();
+            usuario.setUsername("yad");
+            usuario.setPassword("1234");
+            IGenericService<User> usuarioService = new GenericServiceImpl<>(User.class, HibernateUtil.getSessionFactory());
+            usuarioService.save(usuario);
+            loggedUser = usuario;
+            usuarios.add(loggedUser);
+        };
+    }
 }

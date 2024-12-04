@@ -58,6 +58,6 @@
             </Pane>
          </content>
       </ScrollPane>
-      <Button layoutX="7.0" onAction="#switchToHome" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: DarkViolet; -fx-text-fill: White;" text="Volver" />
+      <Button fx:id="backBtton" layoutX="7.0" onAction="#switchToHome" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: DarkViolet; -fx-text-fill: White;" text="Volver" />
    </children>
 </Pane>

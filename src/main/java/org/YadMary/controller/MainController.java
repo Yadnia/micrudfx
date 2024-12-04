@@ -6,7 +6,7 @@ import org.YadMary.App;
 
 import java.io.IOException;
 
-public class mainController {
+public class MainController {
 
     @FXML
     private Button mainBtton;

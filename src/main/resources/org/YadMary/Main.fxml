@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:controller="org.YadMary.controller.mainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="org.YadMary.controller.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane layoutX="439.0" prefHeight="400.0" prefWidth="162.0" style="-fx-background-color: BlueViolet;">
          <children>
@@ -13,7 +13,7 @@
             <Button fx:id="comprasBtton" onAction="#switchToCompras" layoutX="20.0" layoutY="87.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: DarkViolet; -fx-font-family: Outfit; -fx-text-fill: white;" text="Compras" />
             <Button fx:id="inventoryBtton" onAction="#switchToInventory" layoutX="20.0" layoutY="135.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: DarkViolet; -fx-font-family: Outfit; -fx-text-fill: white;" text="Almacén" />
             <Button fx:id="sellBttn" onAction="#switchToSell" layoutX="20.0" layoutY="182.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: DarkViolet; -fx-font-family: Outfit; -fx-text-fill: white;" text="Facturar" />
-            <Button fx:id="administrateBtton" layoutX="20.0" layoutY="230.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: DarkViolet; -fx-font-family: Outfit; -fx-text-fill: white;" text="Administración" />
+            <Button fx:id="administrateBtton" onAction="#switchToAdministrate" layoutX="20.0" layoutY="230.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: DarkViolet; -fx-font-family: Outfit; -fx-text-fill: white;" text="Administración" />
             <Button fx:id="configBtton"  layoutX="20.0" layoutY="338.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: DarkViolet; -fx-font-family: Outfit; -fx-text-fill: white;" text="Configuración" />
          </children>
       </Pane>

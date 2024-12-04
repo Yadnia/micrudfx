@@ -50,7 +50,6 @@
                   <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                   <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                   <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
                </children>
             </GridPane>
             <Label layoutX="170.0" layoutY="35.0" style="-fx-font-family: Outfit; -fx-text-fill: Blueviolet;" text="Edición de Cliente">

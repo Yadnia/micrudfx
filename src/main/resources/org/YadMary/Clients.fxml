@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.YadMary.controller.provsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.YadMary.controller.AdminsController">
    <children>
       <Pane prefHeight="62.0" prefWidth="806.0" style="-fx-background-color: white;">
          <children>
@@ -24,8 +24,8 @@
                   <Button fx:id="provBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Proveedores" />
                   <MenuButton mnemonicParsing="false" style="-fx-background-color: White; -fx-text-fill: white; -fx-border-color: Blueviolet; -fx-font-family: Outfit;" text="Reportes" textFill="WHITE">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Compras" />
-                        <MenuItem mnemonicParsing="false" text="Ventas" />
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
                      </items>
                   </MenuButton>
                   <Button fx:id="backBtton1" mnemonicParsing="false" onAction="#switchToAdministration" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Clientes" />
@@ -59,7 +59,7 @@
                   </TableView>
                </content>
             </ScrollPane>
-            <Label layoutX="335.0" layoutY="25.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: Outfit;" text="Proveedores">
+            <Label layoutX="362.0" layoutY="25.0" prefHeight="34.0" prefWidth="94.0" style="-fx-font-family: Outfit;" text="Clientes">
                <font>
                   <Font size="24.0" />
                </font>

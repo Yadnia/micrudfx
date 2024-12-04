@@ -12,24 +12,24 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.YadMary.controller.provsController">
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Blueviolet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.YadMary.controller.ProductsController">
    <children>
       <Pane prefHeight="62.0" prefWidth="806.0" style="-fx-background-color: white;">
          <children>
             <ButtonBar layoutX="38.0" prefHeight="62.0" prefWidth="744.0">
                <buttons>
-                  <Button fx:id="adminsBtton" mnemonicParsing="false" prefHeight="26.0" prefWidth="459.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Administradores" />
-                  <Button fx:id="sellersBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Vendedores" />
-                  <Button fx:id="inventoryBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Inventario" />
-                  <Button fx:id="provBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Proveedores" />
+                  <Button fx:id="adminsBtton" mnemonicParsing="false" prefHeight="26.0" prefWidth="459.0" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Administradores" onAction="#switchToAdmins" />
+                  <Button fx:id="sellersBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Vendedores" onAction="#switchToSellers" />
+                  <Button fx:id="inventoryBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Inventario" onAction="#switchToInventory" />
+                  <Button fx:id="provBtton" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Proveedores" onAction="#switchToProvs" />
                   <MenuButton mnemonicParsing="false" style="-fx-background-color: White; -fx-text-fill: white; -fx-border-color: Blueviolet; -fx-font-family: Outfit;" text="Reportes" textFill="WHITE">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Compras" />
-                        <MenuItem mnemonicParsing="false" text="Ventas" />
+                        <MenuItem fx:id="ventasReporte" mnemonicParsing="false" text="Ventas" />
+                        <MenuItem fx:id="comprasReporte" mnemonicParsing="false" text="Compras" />
                      </items>
                   </MenuButton>
-                  <Button fx:id="backBtton1" mnemonicParsing="false" onAction="#switchToAdministration" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Clientes" />
-                  <Button fx:id="backBtton" mnemonicParsing="false" onAction="#switchToAdministration" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Volver" />
+                  <Button fx:id="clientBttn" mnemonicParsing="false" onAction="#switchToClients" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Clientes" />
+                  <Button fx:id="backBttom" mnemonicParsing="false" style="-fx-background-color: Blueviolet; -fx-text-fill: white; -fx-border-color: none; -fx-font-family: Outfit;" text="Volver" />
                </buttons>
             </ButtonBar>
          </children>
@@ -51,15 +51,17 @@
                <content>
                   <TableView prefHeight="519.0" prefWidth="450.0">
                      <columns>
-                        <TableColumn prefWidth="109.59997016191483" text="Nombres" />
-                        <TableColumn prefWidth="118.40003204345703" text="Apellidos" />
-                        <TableColumn prefWidth="110.40003967285156" text="Cédula" />
-                        <TableColumn prefWidth="109.5999755859375" text="Usuario" />
+                        <TableColumn prefWidth="82.39998942613602" text="Descripción" />
+                        <TableColumn prefWidth="60.800025939941406" text="Color" />
+                        <TableColumn text="Categoría" />
+                        <TableColumn prefWidth="64.80000305175781" text="Talla" />
+                        <TableColumn prefWidth="73.60003662109375" text="Stock" />
+                        <TableColumn prefWidth="75.0" text="Precio" />
                      </columns>
                   </TableView>
                </content>
             </ScrollPane>
-            <Label layoutX="335.0" layoutY="25.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: Outfit;" text="Proveedores">
+            <Label layoutX="335.0" layoutY="25.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: Outfit;" text="Productos">
                <font>
                   <Font size="24.0" />
                </font>

@@ -11,4 +11,5 @@ public class AcquisitionsController {
     private void switchToHome() throws IOException {
         App.setRoot("Main");
     }
+    
 }

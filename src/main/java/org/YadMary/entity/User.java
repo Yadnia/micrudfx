@@ -3,7 +3,7 @@ package org.YadMary.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "usuarios")
+@Table(name = "users")
 public class User {
 
     @Id

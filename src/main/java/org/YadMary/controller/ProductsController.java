@@ -5,27 +5,28 @@ import org.YadMary.App;
 
 import java.io.IOException;
 
-public class AdministrationController {
-
+public class ProductsController {
     @FXML
-    private void switchToHome() throws IOException {
+    private void switchToAdministration() throws IOException {
         App.setRoot("Main");
     }
     @FXML
     private void switchToAdmins() throws IOException {
         App.setRoot("Admins");
-    }
-    @FXML
+    } @FXML
     private void switchToSellers() throws IOException {
         App.setRoot("Sellers");
+    } @FXML
+    private void switchToClients() throws IOException {
+        App.setRoot("Clients");
     }
     @FXML
     private void switchToInventory() throws IOException {
-        App.setRoot("Inventory");
+        App.setRoot("products");
     }
     @FXML
-    private void switchToAcquisitions() throws IOException {
-        App.setRoot("Acquisitions");
+    private void switchToProvs() throws IOException {
+        App.setRoot("provs");
     }
-
 }
+
